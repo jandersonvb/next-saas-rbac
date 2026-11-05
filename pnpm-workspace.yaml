@@ -3,6 +3,9 @@ packages:
   - "packages/*"
   - "config/*"
 
+allowBuilds:
+  esbuild: true
+
 # O pnpm 10+ não faz mais hoisting de eslint/prettier por padrão.
 # Sem isso, o ESLint não encontra os plugins do @rocketseat/eslint-config
 # e o Prettier não encontra o prettier-plugin-tailwindcss.
